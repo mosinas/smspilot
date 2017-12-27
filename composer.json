@@ -35,6 +35,5 @@
                 "Mongo": "SmsPilot\\SmsPilotFacade"
             }
         }
-    },
-    "minimum-stability": "dev-master"
+    }
 }
