@@ -1,6 +1,6 @@
 <?php
 
-namespace SmsPilot;
+namespace Mosinas\SmsPilot;
 
 use Illuminate\Support\ServiceProvider;
 

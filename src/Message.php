@@ -1,8 +1,6 @@
 <?php
 
-namespace SmsPilot;
-
-use SmsPilot\Models\Massages;
+namespace Mosinas\SmsPilot;
 
 class Message
 {
@@ -32,16 +30,5 @@ class Message
             'to' => $this->to,
             'text' => $this->text,
         ];
-    }
-
-    public function store()
-    {
-        $message = new \SmsPilot\Models\Message();
-        $message->phone = $this->to;
-        $message->text = $this->text;
-
-        $message->save();
-
-        return $message;
     }
 }

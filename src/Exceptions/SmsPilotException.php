@@ -1,4 +1,4 @@
 <?php
-namespace SmsPilot\Exceptions;
+namespace Mosinas\SmsPilot\Exceptions;
 
 class SmsPilotException extends \Exception {}

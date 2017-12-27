@@ -29,10 +29,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SmsPilot\\SmsPilotServiceProvider"
+                "Mosinas\\SmsPilot\\SmsPilotServiceProvider"
             ],
             "aliases": {
-                "Mongo": "SmsPilot\\SmsPilotFacade"
+                "Mongo": "Mosinas\\SmsPilot\\SmsPilotFacade"
             }
         }
     }

@@ -1,5 +1,5 @@
 <?php
-namespace SmsPilot\Facades;
+namespace Mosinas\SmsPilot\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
