@@ -1,0 +1,40 @@
+{
+    "name": "mosinas/smspilot",
+    "description": "Laravel package to provider SMSPilot integration",
+    "keywords": ["sms", "laravel", "text messages", "send", "receive", "smspilot"],
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mosin Alexander",
+            "email": "mosinas@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/log": ">=5.0.0",
+        "illuminate/support": ">=5.0.0",
+        "illuminate/queue": ">=5.0.0",
+        "guzzlehttp/guzzle": "~6"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmsPilot\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmsPilot\\SmsPilotServiceProvider"
+            ],
+            "aliases": {
+                "Mongo": "SmsPilot\\SmsPilotFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
