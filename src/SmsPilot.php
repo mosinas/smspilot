@@ -1,6 +1,6 @@
 <?php
 
-namespace SmsPMosinas\SmsPilotilot;
+namespace Mosinas\SmsPilot;
 
 use GuzzleHttp\Client as GuzzleClient;
 use Illuminate\Contracts\Support\Arrayable;
