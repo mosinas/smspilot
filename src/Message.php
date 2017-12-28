@@ -17,13 +17,8 @@ class Message
         $this->text = $text;
     }
 
-    public function transform($save = false)
+    public function transform()
     {
-        if($save) {
-            $message = $this->store();
-            $this->id = $message->id;
-        }
-
         return [
             'id' => $this->id,
             'from' => $this->from,

@@ -3,8 +3,7 @@
 namespace Mosinas\SmsPilot;
 
 use GuzzleHttp\Client as GuzzleClient;
-use Illuminate\Contracts\Support\Arrayable;
-use SmsPilot\Exceptions\SmsPilotException;
+use Mosinas\SmsPilot\Exceptions\SmsPilotException;
 
 class SmsPilot
 {
@@ -142,9 +141,7 @@ class SmsPilot
             $params['send'][] = $msg;
         }
 
-        $response = $this->post($params);
-
-        dd($response);
+        return $this->post($params);
     }
 
     /**
